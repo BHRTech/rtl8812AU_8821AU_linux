@@ -1526,7 +1526,6 @@ int _netdev_vir_if_open(struct net_device *pnetdev)
 
 	if(padapter->bup == _FALSE && primary_padapter->bup == _TRUE &&
 	   primary_padapter->hw_init_completed == _TRUE) {
-		int i;
 
 		padapter->bDriverStopped = _FALSE;
 		padapter->bSurpriseRemoved = _FALSE;

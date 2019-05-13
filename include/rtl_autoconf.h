@@ -106,7 +106,7 @@
 #endif
 
 
-//#define CONFIG_CONCURRENT_MODE 1
+#define CONFIG_CONCURRENT_MODE 1
 #ifdef CONFIG_CONCURRENT_MODE
 //#define CONFIG_HWPORT_SWAP				//Port0->Sec , Port1 -> Pri
 #define CONFIG_RUNTIME_PORT_SWITCH
@@ -115,7 +115,7 @@
 //#ifdef CONFIG_RTL8812A
 //#define CONFIG_TSF_RESET_OFFLOAD 1		// For 2 PORT TSF SYNC.
 //#endif
-//#define CONFIG_MULTI_VIR_IFACES //besides primary&secondary interfaces, extend to support more interfaces
+#define CONFIG_MULTI_VIR_IFACES //besides primary&secondary interfaces, extend to support more interfaces
 #endif
 
 //#else 	//#ifndef CONFIG_MP_INCLUDED
@@ -232,7 +232,7 @@
 #define CONFIG_USB_RX_AGGREGATION	1
 #endif
 
-//#define CONFIG_REDUCE_USB_TX_INT	1	// Trade-off: Improve performance, but may cause TX URBs blocked by USB Host/Bus driver on few platforms.
+#define CONFIG_REDUCE_USB_TX_INT	1	// Trade-off: Improve performance, but may cause TX URBs blocked by USB Host/Bus driver on few platforms.
 //#define CONFIG_EASY_REPLACEMENT	1
 
 /*
@@ -307,7 +307,7 @@
 
 #endif//CONFIG_PLATFORM_MN10300
 
-
+#undef CONFIG_POWER_SAVING
 
 #if defined(CONFIG_PLATFORM_ACTIONS_ATM702X)
 #ifdef CONFIG_USB_TX_AGGREGATION
